@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		01B0AC15B26161F09B8C20AC /* Pods_one.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C40B1959C8EB54B6A3F9CE6 /* Pods_one.framework */; };
 		31BE957B20AAE7AF001A8E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE957A20AAE7AF001A8E13 /* AppDelegate.swift */; };
-		31BE957D20AAE7AF001A8E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE957C20AAE7AF001A8E13 /* ViewController.swift */; };
+		31BE957D20AAE7AF001A8E13 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE957C20AAE7AF001A8E13 /* MainViewController.swift */; };
 		31BE958020AAE7B0001A8E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BE957E20AAE7B0001A8E13 /* Main.storyboard */; };
 		31BE958220AAE7B0001A8E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BE958120AAE7B0001A8E13 /* Assets.xcassets */; };
 		31BE958520AAE7B0001A8E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BE958320AAE7B0001A8E13 /* LaunchScreen.storyboard */; };
 		31BE95AF20AC4DB6001A8E13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31BE95AE20AC4DB6001A8E13 /* GoogleService-Info.plist */; };
+		31D84C9620AD7003003F36A3 /* WelcomeOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9520AD7003003F36A3 /* WelcomeOne.storyboard */; };
+		31D84C9E20ADB491003F36A3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9D20ADB491003F36A3 /* TabBar.storyboard */; };
+		31D84CA020ADB7D9003F36A3 /* PhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9F20ADB7D9003F36A3 /* PhoneNumber.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FD8BA3C1D39B11824D9EF05 /* Pods-one.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one.release.xcconfig"; path = "Pods/Target Support Files/Pods-one/Pods-one.release.xcconfig"; sourceTree = "<group>"; };
 		31BE957720AAE7AF001A8E13 /* one.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = one.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BE957A20AAE7AF001A8E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31BE957C20AAE7AF001A8E13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31BE957C20AAE7AF001A8E13 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		31BE957F20AAE7B0001A8E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31BE958120AAE7B0001A8E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31BE958420AAE7B0001A8E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31BE958620AAE7B0001A8E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31BE95AE20AC4DB6001A8E13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		31D84C9520AD7003003F36A3 /* WelcomeOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeOne.storyboard; sourceTree = "<group>"; };
+		31D84C9D20ADB491003F36A3 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		31D84C9F20ADB7D9003F36A3 /* PhoneNumber.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhoneNumber.storyboard; sourceTree = "<group>"; };
 		68D317BA93CE558FA2868476 /* Pods-one.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one.debug.xcconfig"; path = "Pods/Target Support Files/Pods-one/Pods-one.debug.xcconfig"; sourceTree = "<group>"; };
 		6C40B1959C8EB54B6A3F9CE6 /* Pods_one.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_one.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,15 +69,42 @@
 		31BE957920AAE7AF001A8E13 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				31D84C9220AD64AF003F36A3 /* ViewControllers */,
+				31BE95B220AC5A2C001A8E13 /* Storyboards */,
 				31BE95AE20AC4DB6001A8E13 /* GoogleService-Info.plist */,
 				31BE957A20AAE7AF001A8E13 /* AppDelegate.swift */,
-				31BE957C20AAE7AF001A8E13 /* ViewController.swift */,
-				31BE957E20AAE7B0001A8E13 /* Main.storyboard */,
 				31BE958120AAE7B0001A8E13 /* Assets.xcassets */,
 				31BE958320AAE7B0001A8E13 /* LaunchScreen.storyboard */,
 				31BE958620AAE7B0001A8E13 /* Info.plist */,
 			);
 			path = one;
+			sourceTree = "<group>";
+		};
+		31BE95B220AC5A2C001A8E13 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				31D84C9D20ADB491003F36A3 /* TabBar.storyboard */,
+				31D84C9720AD7248003F36A3 /* Auth */,
+				31BE957E20AAE7B0001A8E13 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		31D84C9220AD64AF003F36A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31BE957C20AAE7AF001A8E13 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		31D84C9720AD7248003F36A3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				31D84C9520AD7003003F36A3 /* WelcomeOne.storyboard */,
+				31D84C9F20ADB7D9003F36A3 /* PhoneNumber.storyboard */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		4EED060A2431EEDBE893A3A5 /* Frameworks */ = {
@@ -153,9 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BE958520AAE7B0001A8E13 /* LaunchScreen.storyboard in Resources */,
+				31D84C9E20ADB491003F36A3 /* TabBar.storyboard in Resources */,
 				31BE95AF20AC4DB6001A8E13 /* GoogleService-Info.plist in Resources */,
+				31D84CA020ADB7D9003F36A3 /* PhoneNumber.storyboard in Resources */,
 				31BE958220AAE7B0001A8E13 /* Assets.xcassets in Resources */,
 				31BE958020AAE7B0001A8E13 /* Main.storyboard in Resources */,
+				31D84C9620AD7003003F36A3 /* WelcomeOne.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,11 +223,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-one/Pods-one-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -207,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BE957D20AAE7AF001A8E13 /* ViewController.swift in Sources */,
+				31BE957D20AAE7AF001A8E13 /* MainViewController.swift in Sources */,
 				31BE957B20AAE7AF001A8E13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.starsearth.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.starsearth.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

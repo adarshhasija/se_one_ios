@@ -7,5 +7,6 @@ target 'one' do
 
   # Pods for one
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
 end
