@@ -17,6 +17,7 @@
 		31D84C9620AD7003003F36A3 /* WelcomeOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9520AD7003003F36A3 /* WelcomeOne.storyboard */; };
 		31D84C9E20ADB491003F36A3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9D20ADB491003F36A3 /* TabBar.storyboard */; };
 		31D84CA020ADB7D9003F36A3 /* PhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D84C9F20ADB7D9003F36A3 /* PhoneNumber.storyboard */; };
+		31D84CA220AECA89003F36A3 /* AddEditPhoneNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D84CA120AECA89003F36A3 /* AddEditPhoneNumberController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		31D84C9520AD7003003F36A3 /* WelcomeOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeOne.storyboard; sourceTree = "<group>"; };
 		31D84C9D20ADB491003F36A3 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		31D84C9F20ADB7D9003F36A3 /* PhoneNumber.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhoneNumber.storyboard; sourceTree = "<group>"; };
+		31D84CA120AECA89003F36A3 /* AddEditPhoneNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditPhoneNumberController.swift; sourceTree = "<group>"; };
 		68D317BA93CE558FA2868476 /* Pods-one.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one.debug.xcconfig"; path = "Pods/Target Support Files/Pods-one/Pods-one.debug.xcconfig"; sourceTree = "<group>"; };
 		6C40B1959C8EB54B6A3F9CE6 /* Pods_one.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_one.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				31BE957C20AAE7AF001A8E13 /* MainViewController.swift */,
+				31D84CA120AECA89003F36A3 /* AddEditPhoneNumberController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BE957D20AAE7AF001A8E13 /* MainViewController.swift in Sources */,
+				31D84CA220AECA89003F36A3 /* AddEditPhoneNumberController.swift in Sources */,
 				31BE957B20AAE7AF001A8E13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

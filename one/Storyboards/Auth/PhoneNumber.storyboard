@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1q6-fU-X1V">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ITZ-Yc-3eW">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,18 +13,161 @@
         <!--Phone Number-->
         <scene sceneID="VZt-rW-593">
             <objects>
-                <viewController id="ITZ-Yc-3eW" sceneMemberID="viewController">
+                <viewController id="ITZ-Yc-3eW" customClass="AddEditPhoneNumberController" customModule="one" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g6j-vB-Rls">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only India numbers are accepted at the moment" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-FU-efH">
+                                <rect key="frame" x="16" y="84" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFc-WG-tuG">
+                                <rect key="frame" x="16" y="114.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A One Time Passcode will be sent to this number" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-dw-Zi3">
+                                <rect key="frame" x="16" y="155" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xF-Bb-u5i">
+                                <rect key="frame" x="16" y="185.5" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LQd-YP-VDB"/>
+                                </constraints>
+                                <state key="normal" title="Send OTP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendOPTButtonPressed:" destination="ITZ-Yc-3eW" eventType="primaryActionTriggered" id="alw-wg-Wmt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fFc-WG-tuG" firstAttribute="top" secondItem="1tm-FU-efH" secondAttribute="bottom" constant="10" id="7qe-Ds-i2O"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="1tm-FU-efH" secondAttribute="trailing" constant="16" id="A78-9I-Hkq"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="1xF-Bb-u5i" secondAttribute="trailing" constant="16" id="B1P-vh-SkA"/>
+                            <constraint firstItem="Oqb-dw-Zi3" firstAttribute="top" secondItem="fFc-WG-tuG" secondAttribute="bottom" constant="10" id="Bjt-Qo-d0W"/>
+                            <constraint firstItem="fFc-WG-tuG" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="DHn-Wf-Dac"/>
+                            <constraint firstItem="1xF-Bb-u5i" firstAttribute="top" secondItem="Oqb-dw-Zi3" secondAttribute="bottom" constant="10" id="G6I-fS-ODk"/>
+                            <constraint firstItem="fFc-WG-tuG" firstAttribute="top" secondItem="1tm-FU-efH" secondAttribute="bottom" constant="10" id="IJJ-RD-QqF"/>
+                            <constraint firstItem="fFc-WG-tuG" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="PJU-6F-tIU"/>
+                            <constraint firstItem="1tm-FU-efH" firstAttribute="top" secondItem="Tga-7T-bUP" secondAttribute="top" constant="20" id="PjX-mO-Rbb"/>
+                            <constraint firstItem="1tm-FU-efH" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="Qtd-QD-Rjf"/>
+                            <constraint firstItem="1tm-FU-efH" firstAttribute="top" secondItem="Tga-7T-bUP" secondAttribute="top" constant="20" id="Y0Y-gu-1L0"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="fFc-WG-tuG" secondAttribute="trailing" constant="16" id="ZaJ-NK-nrE"/>
+                            <constraint firstItem="1tm-FU-efH" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="fEX-yy-zbN"/>
+                            <constraint firstItem="Oqb-dw-Zi3" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="gkd-zi-6uh"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="Oqb-dw-Zi3" secondAttribute="trailing" constant="16" id="iAr-o3-9Wg"/>
+                            <constraint firstItem="1tm-FU-efH" firstAttribute="top" secondItem="Tga-7T-bUP" secondAttribute="top" id="pK6-eL-Gyr"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="1tm-FU-efH" secondAttribute="trailing" constant="16" id="rtL-ym-2og"/>
+                            <constraint firstItem="Tga-7T-bUP" firstAttribute="trailing" secondItem="fFc-WG-tuG" secondAttribute="trailing" constant="16" id="wd9-rs-cEd"/>
+                            <constraint firstItem="1xF-Bb-u5i" firstAttribute="leading" secondItem="Tga-7T-bUP" secondAttribute="leading" constant="16" id="yTz-Zf-hLM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tga-7T-bUP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Phone Number" prompt="Phone Number" id="RGD-hY-uE5"/>
+                    <navigationItem key="navigationItem" title="Phone Number" id="RGD-hY-uE5">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="WUp-Wh-EFG"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="phoneNumberTextField" destination="fFc-WG-tuG" id="Ik5-y9-12R"/>
+                        <segue destination="jkd-Sc-sVn" kind="show" identifier="sendOTP" id="asn-10-pD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWw-9r-FcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3556" y="-111"/>
+            <point key="canvasLocation" x="3555" y="-112.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fcu-Ji-eRz">
+            <objects>
+                <viewController id="jkd-Sc-sVn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aA0-Ed-lBb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hqh-G3-sbX">
+                                <rect key="frame" x="16" y="74" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSI-Ax-Ijg">
+                                <rect key="frame" x="16" y="114" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cHB-0X-ocC"/>
+                                </constraints>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please allow upto 1 minute for OTP to arrive" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-QI-EDv">
+                                <rect key="frame" x="16" y="172" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5Da-w2-Lif"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bow-G9-wXu" userLabel="OTP Timer">
+                                <rect key="frame" x="143.5" y="222" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did not receive OTP?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bh-Qh-CIG">
+                                <rect key="frame" x="16" y="251" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-Wk-R8X">
+                                <rect key="frame" x="16" y="280" width="288" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C4w-UT-0Lm"/>
+                                </constraints>
+                                <state key="normal" title="SEND AGAIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Bh-Qh-CIG" firstAttribute="top" secondItem="bow-G9-wXu" secondAttribute="bottom" constant="8" id="2xJ-Sa-N3N"/>
+                            <constraint firstItem="Hqh-G3-sbX" firstAttribute="top" secondItem="Vm3-gk-jEa" secondAttribute="top" constant="10" id="CS2-WN-M1y"/>
+                            <constraint firstItem="FxD-QI-EDv" firstAttribute="top" secondItem="wSI-Ax-Ijg" secondAttribute="bottom" constant="8" id="EWA-6v-8KO"/>
+                            <constraint firstItem="rtK-Wk-R8X" firstAttribute="top" secondItem="8Bh-Qh-CIG" secondAttribute="bottom" constant="8" id="FvG-gs-dWq"/>
+                            <constraint firstItem="Vm3-gk-jEa" firstAttribute="trailing" secondItem="Hqh-G3-sbX" secondAttribute="trailing" constant="16" id="M7y-iW-5DV"/>
+                            <constraint firstItem="bow-G9-wXu" firstAttribute="top" secondItem="FxD-QI-EDv" secondAttribute="bottom" constant="8" id="MM4-Ir-gax"/>
+                            <constraint firstItem="Vm3-gk-jEa" firstAttribute="trailing" secondItem="8Bh-Qh-CIG" secondAttribute="trailing" constant="16" id="N08-75-1Gm"/>
+                            <constraint firstItem="wSI-Ax-Ijg" firstAttribute="leading" secondItem="Vm3-gk-jEa" secondAttribute="leading" constant="16" id="Uyc-je-Kyd"/>
+                            <constraint firstItem="Vm3-gk-jEa" firstAttribute="trailing" secondItem="FxD-QI-EDv" secondAttribute="trailing" constant="16" id="V8v-uX-6tX"/>
+                            <constraint firstItem="8Bh-Qh-CIG" firstAttribute="leading" secondItem="Vm3-gk-jEa" secondAttribute="leading" constant="16" id="bh7-oe-fL6"/>
+                            <constraint firstItem="Hqh-G3-sbX" firstAttribute="leading" secondItem="Vm3-gk-jEa" secondAttribute="leading" constant="16" id="cq1-gG-dZf"/>
+                            <constraint firstItem="wSI-Ax-Ijg" firstAttribute="top" secondItem="Hqh-G3-sbX" secondAttribute="bottom" constant="10" id="j0y-RK-cbA"/>
+                            <constraint firstItem="FxD-QI-EDv" firstAttribute="leading" secondItem="Vm3-gk-jEa" secondAttribute="leading" constant="16" id="oPL-Bd-mit"/>
+                            <constraint firstItem="Vm3-gk-jEa" firstAttribute="trailing" secondItem="rtK-Wk-R8X" secondAttribute="trailing" constant="16" id="qwz-s1-OoA"/>
+                            <constraint firstItem="rtK-Wk-R8X" firstAttribute="leading" secondItem="Vm3-gk-jEa" secondAttribute="leading" constant="16" id="uVE-8h-vap"/>
+                            <constraint firstItem="Vm3-gk-jEa" firstAttribute="trailing" secondItem="wSI-Ax-Ijg" secondAttribute="trailing" constant="16" id="wTl-fo-igA"/>
+                            <constraint firstItem="bow-G9-wXu" firstAttribute="centerX" secondItem="aA0-Ed-lBb" secondAttribute="centerX" id="zFS-ac-chw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vm3-gk-jEa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xf7-dN-B0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4425" y="-116.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FfH-mT-hHU">
@@ -32,7 +175,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1q6-fU-X1V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fxv-4a-Pp0">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

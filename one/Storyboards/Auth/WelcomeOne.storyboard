@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lrU-PA-cYL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oat-cE-mcx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="8yV-rJ-I2P">
             <objects>
                 <viewController id="lrU-PA-cYL" sceneMemberID="viewController">
@@ -21,16 +21,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khb-ZT-cwL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-ew-1FF">
-                                        <rect key="frame" x="0.0" y="637" width="375" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="CONTINUE WITH EMAIL ADDRESS">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAW-5d-nfb">
-                                        <rect key="frame" x="0.0" y="607" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="567" width="375" height="50"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9uD-Ae-SEk"/>
+                                        </constraints>
                                         <state key="normal" title="CONTINUE WITH PHONE NUMBER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -38,22 +34,36 @@
                                             <segue destination="AAp-sN-SE1" kind="show" id="506-6g-coJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-ew-1FF">
+                                        <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="c6p-U9-ZIm"/>
+                                        </constraints>
+                                        <state key="normal" title="CONTINUE WITH EMAIL ADDRESS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.52941176470588236" green="0.80784313725490198" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="LAW-5d-nfb" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="8uA-Wa-uGR"/>
                                     <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="CJj-RR-Z2a"/>
+                                    <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="Ene-J7-Vdr"/>
                                     <constraint firstAttribute="trailing" secondItem="Csk-ew-1FF" secondAttribute="trailing" id="J9e-ZC-8bQ"/>
-                                    <constraint firstItem="Csk-ew-1FF" firstAttribute="top" secondItem="LAW-5d-nfb" secondAttribute="bottom" id="KKh-pe-c0D"/>
+                                    <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="KmO-fQ-K8Y"/>
                                     <constraint firstAttribute="trailing" secondItem="Csk-ew-1FF" secondAttribute="trailing" id="SUD-wN-KEG"/>
                                     <constraint firstItem="Csk-ew-1FF" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="SoJ-69-dee"/>
-                                    <constraint firstAttribute="trailing" secondItem="LAW-5d-nfb" secondAttribute="trailing" id="V0I-Mq-QCr"/>
-                                    <constraint firstItem="LAW-5d-nfb" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="W3N-i0-HDX"/>
+                                    <constraint firstAttribute="trailing" secondItem="LAW-5d-nfb" secondAttribute="trailing" id="UB3-B7-UQi"/>
+                                    <constraint firstItem="Csk-ew-1FF" firstAttribute="top" secondItem="LAW-5d-nfb" secondAttribute="bottom" id="X3o-Mp-vUz"/>
                                     <constraint firstAttribute="trailing" secondItem="Csk-ew-1FF" secondAttribute="trailing" id="XV2-AQ-flp"/>
                                     <constraint firstItem="Csk-ew-1FF" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="YyU-V1-Xs1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Csk-ew-1FF" secondAttribute="trailing" id="aA9-Ca-46s"/>
+                                    <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="c3E-7u-GAm"/>
                                     <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="gNs-40-3W9"/>
                                     <constraint firstAttribute="bottom" secondItem="Csk-ew-1FF" secondAttribute="bottom" id="ijR-dg-C61"/>
                                     <constraint firstItem="Csk-ew-1FF" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="pTv-EZ-ncH"/>
-                                    <constraint firstItem="Csk-ew-1FF" firstAttribute="top" secondItem="LAW-5d-nfb" secondAttribute="bottom" id="tsf-De-o3y"/>
+                                    <constraint firstItem="Csk-ew-1FF" firstAttribute="leading" secondItem="Khb-ZT-cwL" secondAttribute="leading" id="wRy-pl-982"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -66,7 +76,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Djx-G9-WPj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="O92-P2-PKO"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="O92-P2-PKO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awn-Tq-pb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
